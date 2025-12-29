@@ -1,9 +1,24 @@
+:root{
+  ftsize: 16px;
+  mobile: 375px;
+  desktop: 1440;
+}
+
 body.light{
   background-color: linear-gradient(180deg, #EBF2FC 0%, #EEF8F9 100%);
   color: ;
+  width: --desktop;
 }
 
 body.dark{
   background-color: linear-gradient(180deg, #040918 0%, #091540 100%);
   color: ;
+}
+
+
+
+section{
+  padding: 10px;
+  box-shadow: 2px 2px 1px 0px black;
+  display: flex;
 }
