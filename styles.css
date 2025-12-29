@@ -6,19 +6,49 @@
 
 body.light{
   background-color: linear-gradient(180deg, #EBF2FC 0%, #EEF8F9 100%);
-  color: ;
+  color: black;
   width: --desktop;
 }
 
 body.dark{
   background-color: linear-gradient(180deg, #040918 0%, #091540 100%);
-  color: ;
+  color: white;
 }
 
+body{
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+}
 
+section > button{
+  padding: 10px;
+  border-radius: 5px;
+}
+
+button{
+  border-radius: 20px;
+  background-color: white;
+}
+
+button:hover{
+  background-color: hsl(3, 86%, 64%);
+}
+
+section > button:hover{
+  background-color: hsl(3, 77%, 44%);
+}
 
 section{
   padding: 10px;
-  box-shadow: 2px 2px 1px 0px black;
+  box-shadow: 2px 2px 1px 1px black;
+  border-radius: 7px;
+  background-color: beige;
+  color: darkslateblue;
   display: flex;
+}
+
+input[type='checkbox']{
+  padding: 5px;
+  border-radius: 20px;
 }
