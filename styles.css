@@ -45,7 +45,12 @@ section{
   border-radius: 7px;
   background-color: beige;
   color: darkslateblue;
-  display: flex;
+}
+
+.sections{
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(4,1fr);
 }
 
 input[type='checkbox']{
