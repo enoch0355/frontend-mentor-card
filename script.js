@@ -32,17 +32,22 @@ inactiveBtn.addEventListener('click', sort('inactive'));
 
 
 function sort(type){
-  const section = document.querySelector('section')
-  const checkbox = document.querySelector('input[type='checkbox']');
-  const isActive = checkbox.checked;
- if(type === 'all'){
-   section.style.display = 'grid';
- } else if(type === 'active' && isActive){
-   section.style.display = 'grid';
- } else if(type ==='inactive' && !isActive){
-   section.style.display = 'grid';
- } else{
-   section.style.display = 'none';
- }
+  sections.forEach((section) => {
+    
+    const checkbox = document.querySelector('input[type='checkbox']');
+    
+    const isActive = checkbox.checked;
+    
+    if(type === 'all'){
+     section.style.display = 'grid';
+    } else if(type === 'active' && isActive){
+     section.style.display = 'grid';
+    } else if(type ==='inactive' && !isActive){
+     section.style.display = 'grid';
+    } else{
+     section.style.display = 'none';
+    }
+    
+  });
 }
 
