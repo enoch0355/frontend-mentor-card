@@ -26,9 +26,9 @@ const allBtn = document.getElementById('all')
 const activeBtn = document.getElementById('active')
 const inactiveBtn = document.getElementById('inactive')
 
-allBtn.addEventListener('click', sort('all'));
-activeBtn.addEventListener('click', sort('active'));
-inactiveBtn.addEventListener('click', sort('inactive'));
+allBtn.addEventListener('click', => sort('all'));
+activeBtn.addEventListener('click', => sort('active'));
+inactiveBtn.addEventListener('click', => sort('inactive'));
 
 
 function sort(type){
@@ -47,7 +47,6 @@ function sort(type){
     } else{
      section.style.display = 'none';
     }
-    
   });
 }
 
