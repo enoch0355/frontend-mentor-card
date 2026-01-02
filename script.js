@@ -5,19 +5,21 @@ function theme(){
   body.classList.toggle('light');
 }
 
-const themeButton = document.getElementById('theme');
+const themeButton = document.getElementById('themeButton');
 
 themebutton.addEventListener('click', theme);
 
 //sections' remove buttons functionality
 
 function removeSec(){
-  
+  section.style.display = 'none';
+  console.log('removed a button');
 }
 
 const section = document.getElementsByClassName('section')
+const button = document.querySelector('section button')
 
 section.forEach((s) =>{
-  s.addEventListner()
+  button.addEventListener('click', removeSec);
 })
 
